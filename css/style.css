@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #00ddd6 0%, #3366ff 90%);
+}
+
+.phone-container {
+  width: 460px;
+  height: 921px;
+  position: relative;
+}
+
+.phone-container .phone-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.phone-container .phone-container-img-front {
+  position: absolute;
+  z-index: 99;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 14px;
+}
+
+.phone-container .phone-container-img-front .phone-img-front {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.phone-container .phone-screen-container {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.phone-container .phone-screen-container .white-bg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.phone-container .phone-screen-container .calculated-result {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  padding: 20px;
+  overflow: hidden;
+  background-color: #333;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.phone-container .phone-screen-container .calculated-result h4 {
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.phone-container .phone-screen-container .keypad-container {
+  padding: 20px 30px;
+  gap: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.phone-container .phone-screen-container .keypad-container .keypad-button {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  aspect-ratio: 1;
+  border-radius: 100px;
+  background-color: orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.phone-container .phone-screen-container .keypad-container .keypad-button.two-col-span {
+  aspect-ratio: 2 / 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+}
+/*# sourceMappingURL=style.css.map */
